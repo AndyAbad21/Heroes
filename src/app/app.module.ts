@@ -7,6 +7,8 @@ import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { HomeComponent } from './components/home/home.component';
 import { APP_ROUTING } from './app.routes';
+import { HeroeComponent } from './components/heroe/heroe.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { APP_ROUTING } from './app.routes';
     NavbarComponent,
     AboutComponent,
     HeroesComponent,
-    HomeComponent
+    HomeComponent,
+    HeroeComponent,
+    BuscadorComponent
   ],
 
   imports: [

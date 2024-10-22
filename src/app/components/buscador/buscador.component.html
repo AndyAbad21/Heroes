@@ -1,0 +1,22 @@
+<br>
+<div class="col-md-12" *ngIf="heroes.length===0">
+  <div class="alert alert-info" role="alert">
+    <h1>No existen resultados para la busquda de: {{termino}}</h1>
+  </div>
+</div>
+
+<div class="card-columns">
+    <div class="row">
+      <div class="card" *ngFor="let h_p65 of heroes;let i=index" style="width: 18rem; margin: 20px;">
+        <img src="{{h_p65.img}}" class="card-img-top" alt="...Card IMAGEN...">
+        <div class="card-body">
+          <h5 class="card-title">{{h_p65.nombre}}</h5>
+          <p class="card-text">{{h_p65.bio}}</p>
+          <p class="card-text"><small>{{h_p65.aparicion}}</small></p>
+          <a [routerLink]="['/heroe',+h_p65.idx - 1]" class="btn btn-primary">Ver mas...</a>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>

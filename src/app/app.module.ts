@@ -17,8 +17,8 @@ import { FotosComponent } from './components/fotos/fotos.component';
 import { CargaComponent } from './components/carga/carga.component';
 import { CargaImagenesService } from './services/carga-imagenes.service';
 import { environment } from '../enviroments/enviroment';
-import { AngularFireModule } from '@angular/fire/compat';
-import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+// import { AngularFireModule } from '@angular/fire/compat';
+// import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 
 @NgModule({
@@ -40,8 +40,8 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
     BrowserModule,
     APP_ROUTING,
     FormsModule,
-    AngularFireModule.initializeApp(environment.firebase), // Inicializar Firebase
-    AngularFirestoreModule // Habilitar Firestore
+    // AngularFireModule.initializeApp(environment.firebase), // Inicializar Firebase
+    // AngularFirestoreModule // Habilitar Firestore
 
   ],
   providers: [

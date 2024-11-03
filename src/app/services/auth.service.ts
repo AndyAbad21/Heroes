@@ -19,25 +19,26 @@ export class AuthService {
     this.leerToken();
   }
 
-  estaAutenticado():boolean{
-    if(this.userToken.length>7){return false};
-    const expira=Number(localStorage.getItem('expira'));
-    const expiraDate = new Date();
-    expiraDate.setDate(expira);
-    if(expiraDate > new Date()){
-      return true;
-    }else{
+  estaAutenticado(): boolean {
+    if (!this.userToken || this.userToken.length < 2) {
       return false;
     }
+  
+    const expira = Number(localStorage.getItem('expira'));
+    const expiraDate = new Date(expira);
+    return expiraDate > new Date();
   }
+  
 
   guardarToken(idToken: string) {
     this.userToken = idToken;
     localStorage.setItem('token', idToken);
-    let ahora=new Date();
-    ahora.setTime(ahora.getTime()+4*3600*1000);
-    localStorage.setItem('expira',ahora.getTime().toString());
+  
+    const ahora = new Date();
+    ahora.setTime(ahora.getTime() + 4 * 3600 * 1000); // 4 horas de expiración
+    localStorage.setItem('expira', ahora.getTime().toString());
   }
+  
 
   leerToken() {
     if (localStorage.getItem('token')) {

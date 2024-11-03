@@ -1,0 +1,41 @@
+<div class="register-container">
+    <h2 class="register-title">CREAR NUEVA CUENTA</h2>
+    
+    <form (ngSubmit)="onSubmit(f65)" #f65="ngForm">
+      <!-- Campo de Email -->
+      <div class="input-group">
+        <span  *ngIf="f65.submitted && f65.controls['email'].errors">El correo es obligatorio</span>
+        <input type="email" id="email" name="email" placeholder=" " required [(ngModel)] = "usuario.email">
+        <label for="email">Email</label>
+      </div>
+      
+      <!-- Campo de Nombre y Apellidos -->
+      <div class="input-group">
+        <!-- <span  *ngIf="f65.submitted && f65.controls['nombre'].errors">El nombre es obligatorio</span> -->
+        <input type="text" id="name" name="name" placeholder=" " required>
+        <label for="name">Nombre y apellidos</label>
+      </div>
+      
+      <!-- Campo de Password -->
+      <div class="input-group">
+        <span  *ngIf="f65.submitted && f65.controls['password'].errors">La contrasenia debe ser de mas de 8 letras</span>
+        <input type="password" id="password" name="password" placeholder=" " required 
+        [(ngModel)] = "usuario.password" minlength="8">
+        <label for="password">Password</label>
+      </div>
+      
+      <!-- Checkbox y enlace de registro -->
+      <div class="options">
+        <label>
+          <input type="checkbox" id="remember" name="remember" [(ngModel)]="recordarUser"> Recordar mi usuario
+        </label>
+        <div class="links">
+          <a href="#" class="register-link" [routerLink]="['/login']">¿Ya tienes cuenta?</a> / <a href="#" class="login-link" [routerLink]="['/login']">Ingresar</a>
+        </div>
+      </div>
+      
+      <!-- Botón de registro -->
+      <button type="submit" class="register-button">CREAR CUENTA</button>
+    </form>
+  </div>
+  

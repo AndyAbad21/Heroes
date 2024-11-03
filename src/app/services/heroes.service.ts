@@ -16,61 +16,63 @@ export class HeroesService {
   private heroes: Heroe[] = [
     {
       idx: 1,
-      nombre: "Aquaman",
-      bio: "El más reconocido de Aquaman es la capacidad telepática de hablar con los peces",
-      img: "assets/img/aquaman.png",
-      aparicion: "1941-11-01",
-      casa: "DC"
+      nombre: "Ceviche",
+      bio: "Plato típico de la costa hecho con pescado marinado en jugo de limón y acompañado de maíz y chifles.",
+      img: "assets/img/ceviche.png",
+      aparicion: "Precolombina",
+      casa: "Costa"
     },
     {
       idx: 2,
-      nombre: "Batman",
-      bio: "Batman es el protector de Gotham, un superhéroe sin superpoderes que usa su intelecto y habilidades de combate",
-      img: "assets/img/batman.png",
-      aparicion: "1939-05-01",
-      casa: "DC"
+      nombre: "Llapingachos",
+      bio: "Tortillas de papa rellenas de queso, servidas con chorizo y salsa de maní.",
+      img: "assets/img/llapingachos.png",
+      aparicion: "Colonial",
+      casa: "Sierra"
     },
     {
       idx: 3,
-      nombre: "Daredevil",
-      bio: "A pesar de ser ciego, Daredevil utiliza sus sentidos agudizados para combatir el crimen en Hell's Kitchen",
-      img: "assets/img/daredevil.png",
-      aparicion: "1964-01-01",
-      casa: "Marvel"
+      nombre: "Hornado",
+      bio: "Cerdo asado lentamente, acompañado de mote, papas y ensalada.",
+      img: "assets/img/hornado.png",
+      aparicion: "Colonial",
+      casa: "Sierra"
     },
     {
       idx: 4,
-      nombre: "Hulk",
-      bio: "Hulk es la poderosa criatura verde que aparece cuando Bruce Banner se enfurece. Tiene una fuerza prácticamente ilimitada",
-      img: "assets/img/hulk.png",
-      aparicion: "1962-05-01",
-      casa: "Marvel"
+      nombre: "Encebollado",
+      bio: "Sopa de pescado con yuca, cebolla encurtida y especias, popular para el desayuno en la costa.",
+      img: "assets/img/encebollado.png",
+      aparicion: "Moderna",
+      casa: "Costa"
     },
     {
       idx: 5,
-      nombre: "Linterna Verde",
-      bio: "Linterna Verde posee un anillo que le otorga habilidades sobrehumanas, alimentado por su fuerza de voluntad",
-      img: "assets/img/linterna-verde.png",
-      aparicion: "1940-07-01",
-      casa: "DC"
+      nombre: "Humita",
+      bio: "Preparación hecha de maíz tierno molido y cocinado en sus propias hojas, típicamente acompañada de queso.",
+      img: "assets/img/humita.png",
+      aparicion: "Precolombina",
+      casa: "Sierra"
     },
     {
       idx: 6,
-      nombre: "Spiderman",
-      bio: "Después de ser mordido por una araña radioactiva, Peter Parker ganó poderes arácnidos y se convirtió en Spiderman",
-      img: "assets/img/spiderman.png",
-      aparicion: "1962-08-01",
-      casa: "Marvel"
+      nombre: "Guatita",
+      bio: "Guiso de estómago de res cocido en una salsa de maní, acompañado de arroz y papas.",
+      img: "assets/img/guatita.png",
+      aparicion: "Moderna",
+      casa: "Costa"
     },
     {
       idx: 7,
-      nombre: "Wolverine",
-      bio: "Wolverine es un mutante con habilidades de curación, garras retráctiles y un esqueleto recubierto de adamantium",
-      img: "assets/img/wolverine.png",
-      aparicion: "1974-11-01",
-      casa: "Marvel"
+      nombre: "Fritada",
+      bio: "Carne de cerdo frita, servida con mote, papas y maíz tostado.",
+      img: "assets/img/fritada.png",
+      aparicion: "Colonial",
+      casa: "Sierra"
     }
-  ];
+];
+
+
   
   constructor() {
     console.log('Servicio Heroes-p65 listo para funcionar');

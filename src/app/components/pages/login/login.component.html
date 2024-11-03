@@ -1,0 +1,30 @@
+<div class="login-container">
+    <h2 class="login-title">LOGIN</h2>
+    
+    <form (ngSubmit)="login(fo)" #fo="ngForm">
+      <!-- Campo de Username -->
+      <div class="input-group">
+        <input type="text" id="username" name="username" placeholder=" " required [(ngModel)]="usuario.email">
+        <label for="username">Username</label>
+      </div>
+      
+      <!-- Campo de Password -->
+      <div class="input-group">
+        <span  *ngIf="fo.submitted && fo.controls['password'].errors">La contrasenia debe ser de mas de 8 letras</span>
+        <input type="password" id="password" name="password" placeholder=" " required [(ngModel)]="usuario.password">
+        <label for="password">Password</label>
+      </div>
+      
+      <!-- Checkbox y enlace de registro -->
+      <div class="options">
+        <label>
+          <input type="checkbox" id="remember" name="remember"[(ngModel)]="recordarUser"> Recordar mi usuario
+        </label>
+        <a class="register-link" routerLink="/register" >¿No tienes cuenta?</a>
+      </div>
+      
+      <!-- Botón de ingreso -->
+      <button type="submit" class="login-button">INGRESAR</button>
+    </form>
+  </div>
+  

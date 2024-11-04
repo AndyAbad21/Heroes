@@ -12,7 +12,7 @@ export class AuthService {
   //Para login
   //https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=[API_KEY]
   private url = 'https://identitytoolkit.googleapis.com/v1/accounts:';
-  private api_key = 'AIzaSyDaNdl0fHPoUrVrzeS8pBHOn7eXwfrc41A';
+  private api_key = 'AIzaSyDnXgCR7DOGkc7ycjH7g1BURpZ30f5Qy38';
   userToken: string = '';
 
   constructor(private http: HttpClient) { 

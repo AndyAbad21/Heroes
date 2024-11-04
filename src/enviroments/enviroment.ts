@@ -1,11 +1,11 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyDaNdl0fHPoUrVrzeS8pBHOn7eXwfrc41A",
-    authDomain: "loginups-p65-4e70b.firebaseapp.com",
-    projectId: "loginups-p65-4e70b",
-    storageBucket: "loginups-p65-4e70b.appspot.com",
-    messagingSenderId: "56281780801",
-    appId: "1:56281780801:web:666c67a8fbbe63c45aecc0"
+    apiKey: "AIzaSyDnXgCR7DOGkc7ycjH7g1BURpZ30f5Qy38",
+    authDomain: "loginups-65.firebaseapp.com",
+    projectId: "loginups-65",
+    storageBucket: "loginups-65.firebasestorage.app",
+    messagingSenderId: "378267063558",
+    appId: "1:378267063558:web:42191d60deee07f80e3a87"
   }
 };

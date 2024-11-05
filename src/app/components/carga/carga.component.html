@@ -2,7 +2,8 @@
     <div>
         <div>
             <h3>Seleccionar archivos</h3>
-            <div appNgDropFile (mouseSobreElemento)="estaSobreElemento=$event" [ngClass]="{'file-over':estaSobreElemento}">
+            <div appNgDropFile (mouseSobreElemento)="estaSobreElemento=$event" [ngClass]="{'file-over':estaSobreElemento}"
+            [archivos]="archivos">
                 <h4>Arrastrar aqui los archivos</h4>
                 <img src="assets/img/cargar.png" alt="">
             </div>
@@ -10,7 +11,7 @@
         <div>
             <h4>cargar archivos</h4>
             <button (click)="cargarImagenes()" [disabled]="archivos.length===0">Cargar a firebase</button>
-            <button>Limpiar</button>
+            <button (click)="limpiarArchivos()">Limpiar</button>
             <hr>
             <table>
                 <thead>
@@ -21,12 +22,12 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Nombre_File</td>
-                        <td>19 MB</td>
+                    <tr *ngFor="let archivo of archivos">
+                        <td>{{archivo.nombreArchivo}}</td>
+                        <td>{{archivo.archivo.size/1024/1024 | number:'.2-2'}} MB</td>
                         <td>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar"></div>
+                                <div class="progress-bar" role="progressbar" [ngStyle]="{'width':archivo.progreso+'%'}"></div>
                             </div>
                         </td>
                     </tr>

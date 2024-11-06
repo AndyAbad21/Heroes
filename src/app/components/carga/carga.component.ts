@@ -5,8 +5,7 @@ import { CargaImagenesService } from 'src/app/services/carga-imagenes.service';
 @Component({
   selector: 'app-carga',
   templateUrl: './carga.component.html',
-  styles: [
-  ]
+  styleUrls: ['./carga.component.css']  // Asegúrate de que el archivo CSS existe o remueve esta línea si no lo tienes
 })
 export class CargaComponent {
   archivos: FileItem[]=[];

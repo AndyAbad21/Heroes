@@ -11,4 +11,54 @@
     height: 200px;
     object-fit: cover;
   }
-  
+  .navbar {
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Cambia de color al hacer hover */
+  .navbar:hover {
+    background-color: #0056b3;
+  }
+
+  /* Estilos para los enlaces de la barra de navegación */
+  .navbar .nav-link {
+    color: #ffffff !important;
+    font-weight: bold;
+    position: relative;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+  }
+
+  /* Cambia el color de los enlaces al hacer hover */
+  .navbar .nav-link:hover {
+    color: blueviolet !important;
+  }
+
+  /* Efecto de subrayado animado */
+  .navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color:blueviolet;
+    left: 50%;
+    bottom: 0;
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+
+  .navbar .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+  }
+
+  /* Estilos para el botón hamburguesa */
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+
+  /* Cambia el icono de menú al hacer hover */
+  .navbar-toggler:hover .navbar-toggler-icon {
+    filter: brightness(0.8);
+  }

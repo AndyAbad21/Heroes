@@ -1,0 +1,135 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+h3,
+h4 {
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilos para la sección de arrastrar archivos */
+.appNgDropFile {
+    border: 2px dashed #007bff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.appNgDropFile.file-over {
+    background-color: #e0f7fa;
+    border-color: #007bff;
+}
+
+.appNgDropFile img {
+    width: 80px;
+    margin-top: 10px;
+}
+
+/* Estilos para los botones */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    color: #666;
+}
+
+button:not(:disabled):first-of-type {
+    background-color: #007bff;
+}
+
+button:not(:disabled):first-of-type:hover {
+    background-color: #0056b3;
+}
+
+button:not(:disabled):last-of-type {
+    background-color: #dc3545;
+}
+
+button:not(:disabled):last-of-type:hover {
+    background-color: #c82333;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 80%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+thead th {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+tbody td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilos para la barra de progreso */
+.progress {
+    width: 100%;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #007bff;
+    transition: width 0.4s ease;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.arriba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #000;
+    padding: 20px 10px 20px 20px;
+}

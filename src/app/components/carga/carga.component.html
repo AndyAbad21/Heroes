@@ -2,14 +2,14 @@
     <div>
         <div>
             <h3>Seleccionar archivos</h3>
-            <div appNgDropFile (mouseSobreElemento)="estaSobreElemento=$event" [ngClass]="{'file-over':estaSobreElemento}"
+            <div class="arriba" appNgDropFile (mouseSobreElemento)="estaSobreElemento=$event" [ngClass]="{'file-over':estaSobreElemento}"
             [archivos]="archivos">
                 <h4>Arrastrar aqui los archivos</h4>
                 <img src="assets/img/cargar.png" alt="">
             </div>
         </div>
-        <div>
-            <h4>cargar archivos</h4>
+        <div class="centro">
+            <h4>Cargar archivos</h4>
             <button (click)="cargarImagenes()" [disabled]="archivos.length===0">Cargar a firebase</button>
             <button (click)="limpiarArchivos()">Limpiar</button>
             <hr>
